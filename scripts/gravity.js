@@ -35,7 +35,7 @@ export default class gravity {
             var dx = objectJ.x - objectI.x;
             var dy = objectJ.y - objectI.y;
             var range = Math.pow(dx,2) + Math.pow(dy,2);
-            var f = (this.g * objectJ.m) / (range * Math.sqrt(range)); 
+            var f = (this.g * objectJ.m) / (range * Math.sqrt(range) + 0.50); 
             ax = ax + dx * f;
             ay = ay + dy * f;
           }
